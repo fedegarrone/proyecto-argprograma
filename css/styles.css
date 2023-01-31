@@ -145,6 +145,7 @@ h1 {
 .recuadro-contactos a {
   text-decoration: none;
   color: var(--azul-fuente);
+  font-weight: bold;
 }
 
 .recuadro-contactos a:hover {
