@@ -26,6 +26,7 @@ html {
   padding: 1rem;
 }
 
+.col-3 p,
 .col-inf p {
   margin-bottom: 0;
 }
@@ -72,6 +73,15 @@ html {
   margin-bottom: 1rem;
 }
 
+.fondo {
+  margin: 0px;
+  padding: 0px;
+  background-image: url(geometric.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .foto-perfil {
   margin-right: 2rem;
   height: 300px;
@@ -79,19 +89,9 @@ html {
   border-radius: 50%;
 }
 
-h1 {
-  font-weight: bold;
-}
-
 .logo {
   width: 60vw;
   height: auto;
-}
-
-.titulo {
-  /* padding: 15px; */
-  text-align: center;
-  margin-bottom: 2rem;
 }
 
 .pagina {
@@ -102,7 +102,6 @@ h1 {
   min-height: 100vh;
   scroll-margin: 0px;
   scroll-snap-align: center;
-  background-color: var(--azul-fondo);
 }
 
 .present hr {
@@ -125,7 +124,7 @@ h1 {
 .recuadro-educ {
   max-width: 95%;
   min-width: 95%;
-  height: 75vh;
+  height: 90vh;
   flex-direction: column;
   position: relative;
   padding-bottom: 9rem;
@@ -173,11 +172,12 @@ h1 {
 
 .slider {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1.5rem;
   display: flex;
 }
 
-.slider div:first-child {
+.slider div:first-child,
+.slider div:last-child {
   margin-right: 1.5rem;
 }
 
@@ -200,4 +200,10 @@ h1 {
 #slid-2 {
   background-color: var(--azul-fondo);
   transition: background-color 1s;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
 }
